@@ -23,6 +23,11 @@ h1 {
 /*1. Centera boxen */
 section#part-blue {
   background-color:rgba(0, 162, 255,1);
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  
   
 }
 
@@ -30,18 +35,31 @@ section#part-blue {
   width:100px;
   height:100px;
   background-color: royalblue;
+  
+  
+  
   }
 
-/*2. Sprid ut länkarna jämnt horisontellt*/
+
+
+  /*2. Sprid ut länkarna jämnt horisontellt*/
 
 section#part-orange {
   background-color:rgba(250, 182, 71, 1);
+  display:flex; 
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: center;
 }
+
+
 
 /* 3. Stapla boxarna vertikalt */
 section#part-pink {
   background-color: pink;
-  display:flex
+  display:flex;
+  flex-direction: column;
+  
 }
 
 section#part-pink .column-box {
@@ -51,11 +69,15 @@ section#part-pink .column-box {
   margin:5px;
 }
 
+
+
+
 /* 4. Få boxarna att "wrappas" (flera rader) */
 
 section#part-green {
   background-color: rgba(150, 255, 118,1);
   display:flex;
+  flex-wrap:wrap;
   
 }
 
@@ -82,6 +104,8 @@ section#part-brown article {
 
 #part-brown article:nth-child(1) {
   background-color:lightblue;
+  order: 3;
+  
   
 }
 #part-brown article:nth-child(2) {
