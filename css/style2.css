@@ -1,0 +1,38 @@
+#wrapper{
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 100vh;
+
+    
+
+
+    
+}
+
+.section1{
+     display:flex;
+     background-color: cadetblue;
+     flex:1;
+     margin: 5px;
+     flex-basis: 100px;
+}
+
+.section2{
+    display: flex;
+    background-color: burlywood;
+    flex:1;
+    margin:5px;
+    flex-basis: 100px;
+
+
+}
+
+.section3{
+    display: flex;
+    background-color: brown;
+    flex:1;
+    margin: 5px;
+    flex-basis:100px;
+}
